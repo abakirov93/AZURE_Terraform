@@ -1,0 +1,42 @@
+# From AWS Bastion we can connect to Azure Authentication authorization 
+
+#  This is for azure cli installation in/by ec2-user bastion 
+
+#   "pip install azure-cli" 
+#   "yum install python-pip -y"
+#   "yum install python3-pip" it installs python3 for you 
+#   "pip3 install azure-cli" this command installs for you azure cli if not install right python version. By running "yum install python3-pip"
+#   "az" when you run this command it shows azure 
+
+# 	Power shell?: for interview or in company you fill face very often.
+
+# "az account list-locations -o table"
+# "az account list" shows how many list you have
+
+# "az login" when you run it in cli, it shows "https://microsoft.com/devicelogin" put it to browser/google it asks code copy from code from cli "DQTGBHXFP" then you should see output in cli
+
+# By running this commands "az account set --subscription="81797568-8603-4346-bd0a-3ea3259964a2" you 
+
+# "az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/81797568-8603-4346-bd0a-3ea3259964a2""
+
+# 	Install AZ Cli on CentOS 
+#  
+# 1. sudo rr 
+# 2. Copy paste below  
+# sudo sh -c 'echo -e "[azure-cli] 
+# name=Azure CLI 
+# baseurl=https://packages.microsoft.com/yumrepos/azure-cli 
+# enabled=1 
+# gpgcheck=1 
+# gpgkey=https://packages.microsoft.com/keys/microsoft.asc" > /etc/yum.repos.d/azure-cli.repo' 
+#  
+# 3. sudo yum install azure-cli -y 
+
+
+# 	SETUP AZURE
+
+# az login 
+# 4. az account list 
+# 5. az account set --subscription="fef83109-134b-4aaf-a09a-92603422c251" 
+# 6. az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/fef83109-134b-4aaf-a09a-92603422c251" 
+# az login --service-principal -u     CLIENT_ID  -p CLIENT_SECRET --tenant TENANT_ID 
